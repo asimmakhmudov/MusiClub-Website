@@ -87,13 +87,13 @@ html {
     position: relative;
 }
 .bg {
-    background-image: url(/photos/backg.jpg);
+    background-image: url(photos/backg.jpg);
     width: 100%;
     height: 650px;
     background-size: cover;
 }
 .bottomimg {
-    background: url(/photos/bottomimg.png);
+    background: url(photos/bottomimg.png);
     width: 100%;
     height: 100px;
 }
