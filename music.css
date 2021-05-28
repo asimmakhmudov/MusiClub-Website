@@ -204,10 +204,12 @@ body.dark {
 @media only screen and (max-width:500px){
     body {
         flex-flow: column;
+        padding-left: 4%;
+        padding-right: 4%;
     }
     .menusec .menuicon {
         display: block;
-        padding-right: 15px;
+        padding-right: 10px;
     }
     .menu ul {
         width: 100%;
@@ -233,8 +235,11 @@ body.dark {
     .row1 p {
         font-size: 27px;
         width: 400px;
-        padding-left: 10%;
-        padding-right: 10%;
+    }
+    .container1 {
+        font-size: 100px;
+        padding: 3px;
+
     }
     .container1 .music-container .box {
         height: 100%;
@@ -275,10 +280,8 @@ body.dark {
         height: 200px;
     }
     .row1 .ab {
-        font-size: 22px;
+        font-size: 20px;
         width: 400px;
-        padding-left: 10%;
-        padding-right: 10%;
     }
 }
 
