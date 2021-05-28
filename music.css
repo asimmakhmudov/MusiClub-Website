@@ -11,11 +11,13 @@ body {
 
 .menusec .menu {
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
     display: flex;
     align-items: center;
     flex: 1;
     text-align: right;
+    padding-left: 50%;
+    
 }
 .menu  h1 {
     font-size: 25px;
@@ -92,9 +94,10 @@ body {
 .container1 {
     position: relative;
     margin: 3rem;
-    max-width: 40%;
+    max-width: 100%;
     height: 30%;
-    justify-content: center;
+    padding-left: 15%;
+    padding-right: 15%;
 }
 .container1 .musicname {
     color: #000;
@@ -103,8 +106,9 @@ body {
     margin: 2px;
 }
 .container1 .music-container {
-    display: flex;
+    display: block;
     flex-flow: column;
+    
 }
 .container1 .music-container .box {
     width: 100%;
@@ -158,8 +162,8 @@ body.dark {
     padding-left: 8%; 
     padding-right: 8%;
 }
-p {
-    width: 450px;
+.row1 p {
+    width: 570px;
     font-size: 30px;
 }
 .msclb {
@@ -192,8 +196,8 @@ p {
     padding-left: 8%; 
     padding-right: 8%;
 }
-.ab {
-    width: 450px;
+.row1 .ab {
+    width: 710px;
     font-size: 30px;
 }
 /*RESPONSIVE*/
@@ -206,7 +210,7 @@ p {
         padding-right: 15px;
     }
     .menu ul {
-        width: 50%;
+        width: 100%;
         position: absolute;
         background: rgb(255, 115, 0);
         top: 45px;
@@ -227,9 +231,13 @@ p {
     #menuList {
         overflow: hidden;
     }
+    .row1 p {
+        width: 400px;
+        font-size: 26px;
+    }
     .container1 .music-container .box {
         height: 100%;
-        width: 200%;
+        width: 110%;
         flex-flow: column;
         display: flex;
     }
@@ -262,11 +270,12 @@ p {
         margin: 25px 0;
     }
     .about .row2 img {
-        width: 250px;
-        height: 250px;
+        width: 200px;
+        height: 200px;
     }
-    .ab {
-        font-size: 18px;
+    .row1 .ab {
+        font-size: 19px;
+        width: 400px;
     }
 }
 
