@@ -4,45 +4,86 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="music.css">   
+    <link rel="stylesheet" href="music.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="/photos/headphone.svg" style="border: 10px;">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-</head>
     <title>MusicMad</title>
 </head>
-<body>  <nav>
-        <div class="header">
-                <h1>MY MUSIC PLAYLIST</h1>
-        </div>
-        <input type="checkbox" class="checkbox" id="checkbox">
+<body>  
+        
+        <nav class="menusec">
+        <i class="fas fa-bars menuicon" onclick="toggleMenu()"></i> 
+        <h1>MusiClub</h1>
+        <nav class="menu" >
+                <ul id="menuList">
+                    <li><a href="#"><span class="home">Home</span></a></li>
+                    <li><a href="#about">About us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Premium</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                </nav> 
+                <input type="checkbox" class="checkbox" id="checkbox">
                 <label for="checkbox" class="label">
-                    <i class="fas fa-moon"></i>
-                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon moon"></i>
+                    <i class="fas fa-sun sun"></i>
                     <div class="ball"></div>
-                </label>    
-        </nav> 
+        
+        </label> 
+        </nav>
         <div class="mainsection">
-                <div class="row1"></div>
+                <div class="row1">
+                        <p>Here visitors can listen to masterpiece. <span class="msclb">MusiClub</span> is a website designed for listening to masterpieces. You can listen whenever you want.</p>
+                </div>
                 <div class="row2">
-                        <img src="photos/undraw_compose_music_ovo2.svg" alt="">
+                        <img src="https://storage.googleapis.com/isometriclove.appspot.com/headphones_S.png">
                 </div>
         </div>   
-        </div>
-                <div class="container1">
-                        
-                                <div class="music-container"> 
-                                        <div class="box">
-                                                <div class="image">
-                                                <img src="photos/undraw_Playlist_re_1oed.svg">
-                                                </div>
-                                                <div class="music"> 
-                                                <div class="musicname">HVME-GOOSEBUMPS</div>
-                                                <audio src="music/HVME_GOOSEBUMPS.mp3" controls></audio>
-                                                </div>
+        </div>  <nav class="musics">
+                <div class="container1">  
+                        <div class="music-container"> 
+                                <div class="box">
+                                        <div class="image">
+                                        <img src="photos/undraw_Playlist_re_1oed.svg">
+                                        </div>
+                                        <div class="music"> 
+                                        <div class="musicname">BEETHOVEN - MOONLIGHT</div>
+                                        <audio src="music/beethoven-moonlight.mp3" controls></audio>
                                         </div>
                                 </div>
+                        </div>
                 </div>
-                <div class="footer"></div>
+                <div class="container1">  
+                        <div class="music-container"> 
+                                <div class="box">
+                                        <div class="image">
+                                        <img src="photos/undraw_Playlist_re_1oed.svg">
+                                        </div>
+                                        <div class="music"> 
+                                        <div class="musicname">TCHAIKOVSKY - SWAN LAKE</div>
+                                        <audio src="music/tchaikovsky-swan-lake-swan-theme.mp3" controls></audio>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+                </nav>
+                <div class="about" id="about">
+                        <div class="row1">
+                        <p class="ab">HI THERE! I'm Asim Makhmudov. I'Azerbaijanian based web designer & front-end developer focused on crafting clean & user-friendly experience. I am passionate about building excellent software that improves the lives of those around me.</p>
+                        </div>
+                        <div class="row2">
+                        <img src="https://storage.googleapis.com/isometriclove.appspot.com/human-1Side.png">
+                        </div>
+                </div>
+                <div class="footer">
+                       <span class="ft">copyright © 2020 - 2021 <br> Asim Makhmudov</span>
+                       <br>
+                       <div class="contact" id="contact">
+                       <a href="https://www.instagram.com/asim.makhmudzadeh/"><i class="fab fa-instagram"></i></a>
+                       <a href="https://www.facebook.com/asim.mahmudov.92/"><i class="fab fa-facebook"></i></a>
+                       </div>
+                </div>
                 <script src="music.js"></script>
 </body>
 </html>
