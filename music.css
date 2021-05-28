@@ -215,8 +215,7 @@ body.dark {
         background: rgb(255, 115, 0);
         top: 45px;
         left: 0;
-        z-index: 2;
-        
+        z-index: 2;  
     }
     .menu ul li{
         display: block;
@@ -232,12 +231,14 @@ body.dark {
         overflow: hidden;
     }
     .row1 p {
+        font-size: 27px;
         width: 400px;
-        font-size: 26px;
+        padding-left: 10%;
+        padding-right: 10%;
     }
     .container1 .music-container .box {
         height: 100%;
-        width: 110%;
+        width: 100%;
         flex-flow: column;
         display: flex;
     }
@@ -274,8 +275,10 @@ body.dark {
         height: 200px;
     }
     .row1 .ab {
-        font-size: 19px;
+        font-size: 22px;
         width: 400px;
+        padding-left: 10%;
+        padding-right: 10%;
     }
 }
 
