@@ -207,9 +207,12 @@ body.dark {
         padding-left: 4%;
         padding-right: 4%;
     }
+    .menusec {
+        padding: 20px;
+    }
     .menusec .menuicon {
         display: block;
-        padding-right: 10px;
+        padding-right: 20px;
     }
     .menu ul {
         width: 100%;
@@ -233,8 +236,9 @@ body.dark {
         overflow: hidden;
     }
     .row1 p {
-        font-size: 27px;
-        width: 400px;
+        font-size: 22px;
+        width: 350px;
+        padding: 15px;
     }
     .container1 {
         font-size: 100px;
@@ -281,7 +285,8 @@ body.dark {
     }
     .row1 .ab {
         font-size: 20px;
-        width: 400px;
+        width: 300px;
+        padding: 20px;
     }
 }
 
