@@ -205,9 +205,6 @@ body.dark {
     body {
         flex-flow: column;
     }
-    .menusec {
-        padding: 20px;
-    }
     .menusec .menuicon {
         display: block;
         padding-right: 10px;
