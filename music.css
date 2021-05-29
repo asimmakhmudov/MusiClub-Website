@@ -204,8 +204,6 @@ body.dark {
 @media only screen and (max-width:600px){
     body {
         flex-flow: column;
-        padding-left: 4%;
-        padding-right: 4%;
     }
     .menusec {
         padding: 20px;
