@@ -39,7 +39,7 @@ body {
     margin-right: 30px;
 }
 .menu ul li a:hover {
-    color: rgb(253, 170, 92);
+    color: #262626;
 }
 .menusec {
     width: 100%;
@@ -89,54 +89,62 @@ body {
 #menuList{
     transition: 0.3s linear;
 }
-/*MUSIC CONTAINERS*/
-
-.container1 {
+/*MUSIC CONTAINERS2*/
+.musics {
+    display: flex;
     position: relative;
-    margin: 3rem;
-    max-width: 100%;
-    height: 30%;
-    padding-left: 15%;
-    padding-right: 15%;
+    justify-content: center;
+    align-items: center;
+    margin: 3%;
+
 }
-.container1 .musicname {
-    color: #000;
-    font-size: 20px;
-    text-align: center;
-    margin: 2px;
-}
-.container1 .music-container {
-    display: block;
-    flex-flow: column;
+.container1 {
+    margin: 7px;
+    width: 20%;
+    height: 40%;
     
 }
 .container1 .music-container .box {
+    height: 100%;
     width: 100%;
     display: flex;
+    flex-flow: column;
     background: #f9f9f9;
     border-radius: 1rem;
     box-shadow: 0 .5rem 1rem #000;
     overflow: hidden;
+    
 }
 .container1 .music-container .box .image {
-       width: 25%;
-       height: 60%;
-}
-.container1 .music-container .box .music {
     width: 100%;
-    text-align: center;
-}
-.container1 .music-container .box .music audio{
-    width: 100%;
-    outline: none;
+    height: 50%;
 }
 .container1 .music-container .box .image img {
+    width: 100%;
     height: 100%;
-    width: 90%;
-    outline: none;
 }
-.container1 .music-container .box .music audio::-webkit-media-controls-eclosure {
-    background: none;
+.container1 .music-container .box .music {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    align-self: center;
+    
+}
+.music .musicname {
+    font-size: 14px;
+    
+}
+body.dark .music .musicname {
+    color: #262626;
+}
+body.dark .inside {
+    color: #262626;
+}
+body.dark .login_sec {
+    color: #262626;
+}
+body.dark .menu ul li a:hover {
+    color: wheat;
 }
 /*MAIN SECTION*/
 body.dark {
@@ -285,13 +293,6 @@ body.dark {
     height: 30px;
 }
 
-
-
-
-
-
-
-
 /*RESPONSIVE*/
 @media only screen and (max-width:600px){
     body {
@@ -317,7 +318,7 @@ body.dark {
         text-align: left;
     }
     .menu ul li a {
-        color: white;
+        color: #262626;
     }
     #menuList {
         overflow: hidden;
@@ -327,32 +328,35 @@ body.dark {
         width: 350px;
         padding: 15px;
     }
+    .musics {
+        position: relative;
+        flex-flow: column;
+    }
     .container1 {
-        font-size: 100px;
-        padding: 3px;
-
+        width: 80%;
+        height: 10%;
     }
     .container1 .music-container .box {
-        height: 100%;
+        height: 30%;
         width: 100%;
         flex-flow: column;
         display: flex;
     }
     .container1 .music-container .box .image {
-        height: 100%;
+        height: 30%;
         width: 100%;
     }
     .container1 .music-container .box .image img {
-        height: 100%;
+        height: 30%;
         width: 100%;
     }
     .container1 .music-container .box .music {
-        height: 100%;
+        height: 30%;
         width: 100%;
         
     }
     .music .musicname {
-        font-size: 14px;
+        font-size: 20px;
     }
     .mainsection {
         flex-direction: column-reverse;
