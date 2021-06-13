@@ -178,6 +178,10 @@ body.dark {
     color: #dd5800;
 
 }
+.section_h {
+    text-align: center;
+    font: 30px;
+}
 .about .row1 {
     flex-basis: 60%;
     position: relative;
@@ -200,6 +204,94 @@ body.dark {
     width: 710px;
     font-size: 30px;
 }
+/*PREMIUM*/
+
+.chos_pre {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+.preminum_container {
+    position: relative;
+    margin: 2rem;
+    max-width: 100%;
+    height: 100%;
+}
+.preminum_box {
+    height: 100%;
+    width: 100%;
+    display: block;
+    background: #f9f9f9;
+    box-shadow: 0 .5rem 1rem #000;
+    overflow: hidden;
+}
+.inside {
+    margin: 2rem;
+    text-align: center;
+}
+.inside .pre_t {
+    font-size: 24px;
+    color: #dd5800;
+}
+.inside p {
+    width: 100%;
+}
+.inside input {
+    border-color: #dd5800;
+    border-radius: 30px;
+    width: 100px;
+    height: 30px;
+}
+/*LOGIN SECTION*/
+.login_sec {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+.log_box {
+    margin: 2rem;
+    height: 100%;
+    width: 30%;
+    display: block;
+    background: #f9f9f9;
+    box-shadow: 0 .5rem 1rem #000;
+    overflow: hidden;
+}
+.login {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-size: 22px;
+}
+.login .login_row {
+    text-align: center;
+    margin: 1rem;
+}
+.login .login_row .a {
+    margin: 1.5rem;
+    border-color: #dd5800;
+    color: #dd5800;
+    width: 250px;
+    height: 25px;
+    
+}
+
+.button {
+    border-color: #dd5800;
+    border-radius: 30px;
+    width: 100px;
+    height: 30px;
+}
+
+
+
+
+
+
+
+
 /*RESPONSIVE*/
 @media only screen and (max-width:600px){
     body {
@@ -282,6 +374,24 @@ body.dark {
         font-size: 20px;
         width: 300px;
         padding: 20px;
+    }
+    /*LOGIN*/
+    .log_box {
+        margin: 2rem;
+        height: 100%;
+        width: 80%;
+        display: block;
+        background: #f9f9f9;
+        box-shadow: 0 .5rem 1rem #000;
+        overflow: hidden;
+    }
+    /*PREMIUM*/
+    .chos_pre {
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column;
     }
 }
 
