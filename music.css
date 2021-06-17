@@ -5,6 +5,7 @@
     margin: 0;
 }
 body {
+    background-color: wheat;
     transition: 0.2s linear;
 }
 /*MENU SECTION*/
@@ -99,7 +100,7 @@ body {
 
 }
 .container1 {
-    margin: 7px;
+    margin: 4px;
     width: 20%;
     height: 40%;
     
@@ -116,11 +117,14 @@ body {
     
 }
 .container1 .music-container .box .image {
-    width: 100%;
+    width: 80%;
     height: 50%;
+    text-align: center;
+    align-self: center;
 }
 .container1 .music-container .box .image img {
-    width: 100%;
+    border-radius: 50%;
+    width: 70%;
     height: 100%;
 }
 .container1 .music-container .box .music {
@@ -219,6 +223,7 @@ body.dark {
     position: relative;
     align-items: center;
     justify-content: center;
+    margin: 3rem;
 }
 .preminum_container {
     position: relative;
@@ -257,6 +262,7 @@ body.dark {
     position: relative;
     align-items: center;
     justify-content: center;
+    margin: 1rem;
 }
 .log_box {
     margin: 2rem;
@@ -344,11 +350,11 @@ body.dark {
     }
     .container1 .music-container .box .image {
         height: 30%;
-        width: 100%;
+        width: 80%;
     }
     .container1 .music-container .box .image img {
-        height: 30%;
-        width: 100%;
+        height: 50%;
+        width: 50%;
     }
     .container1 .music-container .box .music {
         height: 30%;
