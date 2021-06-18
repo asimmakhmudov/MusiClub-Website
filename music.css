@@ -393,9 +393,48 @@ body.dark {
         padding: 20px;
     }
     /*LOGIN*/
+    .login_sec {
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem;
+    }
     .log_box {
-        width: 20rem;
+        height: 100%;
+        width: 100%;
         display: block;
+        background: #797979;
+        box-shadow: 0 .5rem 1rem #000;
+        overflow: hidden;
+    }
+    .login {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        font-size: 20px;
+    }
+    .login .login_row {
+        text-align: center;
+        margin: 1rem;
+    }
+    .login .login_row .a {
+        font-size: 15px;
+        margin: 1.5rem;
+        border-color: #dd5800;
+        color: #dd5800;
+        width: 150px;
+        height: 25px;
+        
+    }
+    .button {
+        border-color: #dd5800;
+        border-radius: 30px;
+        width: 100px;
+        height: 35px;
+        text-align: center;
+        align-items: center;
+        font-size: 12px;
     }
     /*PREMIUM*/
     .chos_pre {
@@ -407,7 +446,7 @@ body.dark {
     }
     .preminum_container {
         position: relative;
-        width: 20rem;
+        width: 300px;
     }
 }
 
