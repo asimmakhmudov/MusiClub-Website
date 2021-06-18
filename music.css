@@ -60,7 +60,7 @@ body {
     background-color: rgb(255, 115, 0);
     padding: 2px;
     height: 26px;
-    width: 50px;
+    width: 45px;
     display: flex;
     position: relative;
     align-items: center;
@@ -84,7 +84,7 @@ body {
     transition: 0.2s linear;
 }
 .checkbox:checked + .label .ball {
-    transform: translateX(24px);
+    transform: translateX(20px);
 }
 #menuList{
     transition: 0.3s linear;
@@ -272,7 +272,7 @@ body.dark {
     height: 100%;
     width: 30%;
     display: block;
-    background: #f9f9f9;
+    background: #797979;
     box-shadow: 0 .5rem 1rem #000;
     overflow: hidden;
 }
@@ -295,7 +295,6 @@ body.dark {
     height: 25px;
     
 }
-
 .button {
     border-color: #dd5800;
     border-radius: 30px;
@@ -307,7 +306,7 @@ body.dark {
 }
 
 /*RESPONSIVE*/
-@media only screen and (max-width:600px){
+@media only screen and (max-width:500px){
     body {
         flex-flow: column;
     }
@@ -394,11 +393,10 @@ body.dark {
     }
     /*LOGIN*/
     .log_box {
+        font-size: 15px;
         height: 100%;
-        width: 80%;
+        width: 23rem;
         display: block;
-        background: #f9f9f9;
-        box-shadow: 0 .5rem 1rem #000;
         overflow: hidden;
     }
     /*PREMIUM*/
