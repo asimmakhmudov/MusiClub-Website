@@ -394,7 +394,7 @@ body.dark {
     }
     /*LOGIN*/
     .log_box {
-        width: 100%;
+        width: 20rem;
         display: block;
     }
     /*PREMIUM*/
@@ -407,8 +407,7 @@ body.dark {
     }
     .preminum_container {
         position: relative;
-        margin: 1.5rem;
-        width: 25rem;
+        width: 20rem;
     }
 }
 
