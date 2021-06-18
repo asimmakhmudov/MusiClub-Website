@@ -456,7 +456,15 @@ body.dark {
         width: 240px;
     }
     .label {
+        background-color: rgb(255, 115, 0);
+        padding: 2px;
+        height: 26px;
         width: 50px;
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 50px;
     }
     .checkbox:checked + .label .ball {
         transform: translateX(25px);
