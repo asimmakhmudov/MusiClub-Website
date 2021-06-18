@@ -16,7 +16,7 @@ body {
     align-items: center;
     flex: 1;
     text-align: right;
-    padding-left: 50%;
+    padding-left: 48%;
     
 }
 .menu  h1 {
@@ -61,7 +61,7 @@ body {
     background-color: rgb(255, 115, 0);
     padding: 2px;
     height: 26px;
-    width: 45px;
+    width: 50px;
     display: flex;
     position: relative;
     align-items: center;
@@ -85,7 +85,7 @@ body {
     transition: 0.2s linear;
 }
 .checkbox:checked + .label .ball {
-    transform: translateX(22.5px);
+    transform: translateX(25px);
 }
 #menuList{
     transition: 0.3s linear;
@@ -312,6 +312,9 @@ body.dark {
         flex-flow: column;
         margin: 0;
     }
+    .menusec .menu {
+        margin: 0;
+    }
     .menusec .menuicon {
         display: block;
         padding-right: 10px;
@@ -448,6 +451,12 @@ body.dark {
     .preminum_container {
         position: relative;
         width: 240px;
+    }
+    .label {
+        width: 50px;
+    }
+    .checkbox:checked + .label .ball {
+        transform: translateX(25px);
     }
 }
 
