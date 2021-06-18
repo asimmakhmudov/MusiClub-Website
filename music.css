@@ -61,7 +61,7 @@ body {
     background-color: rgb(255, 115, 0);
     padding: 2px;
     height: 26px;
-    width: 50px;
+    width: 45px;
     display: flex;
     position: relative;
     align-items: center;
@@ -85,7 +85,7 @@ body {
     transition: 0.2s linear;
 }
 .checkbox:checked + .label .ball {
-    transform: translateX(25px);
+    transform: translateX(22.5px);
 }
 #menuList{
     transition: 0.3s linear;
@@ -447,7 +447,7 @@ body.dark {
     }
     .preminum_container {
         position: relative;
-        width: 250px;
+        width: 240px;
     }
 }
 
