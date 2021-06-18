@@ -265,7 +265,7 @@ body.dark {
     position: relative;
     align-items: center;
     justify-content: center;
-    margin: 1rem;
+    margin: 2rem;
 }
 .log_box {
     margin: 2rem;
@@ -395,7 +395,7 @@ body.dark {
     .log_box {
         font-size: 15px;
         height: 100%;
-        width: 23rem;
+        width: 25rem;
         display: block;
         overflow: hidden;
     }
@@ -411,6 +411,12 @@ body.dark {
         position: relative;
         margin: 1.5rem;
         width: 25rem;
+    }
+    .label {
+        width: 45px;
+    }
+    .checkbox:checked + .label .ball {
+        transform: translateX(19px);
     }
 }
 
