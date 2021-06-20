@@ -16,7 +16,7 @@ body {
     align-items: center;
     flex: 1;
     text-align: right;
-    padding-left: 48%;
+    padding-left: 50%;
     
 }
 .menu  h1 {
@@ -39,7 +39,7 @@ body {
     margin-right: 30px;
 }
 .menu ul li a:hover {
-    color: #262626;
+    color: rgb(253, 170, 92);
 }
 .menusec {
     width: 100%;
@@ -49,7 +49,6 @@ body {
     box-sizing: border-box;
     overflow: hidden;
     display: inline-flex;
-    justify-content: center;
 }
 .checkbox {
     opacity: 0;
@@ -85,70 +84,59 @@ body {
     transition: 0.2s linear;
 }
 .checkbox:checked + .label .ball {
-    transform: translateX(25px);
+    transform: translateX(24px);
 }
 #menuList{
     transition: 0.3s linear;
 }
-/*MUSIC CONTAINERS2*/
-.musics {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    margin: 3%;
+/*MUSIC CONTAINERS*/
 
-}
 .container1 {
-    margin: 4px;
-    width: 20%;
-    height: 40%;
+    position: relative;
+    margin: 3rem;
+    max-width: 100%;
+    height: 30%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.container1 .musicname {
+    color: #000;
+    font-size: 20px;
+    text-align: center;
+    margin: 2px;
+}
+.container1 .music-container {
+    display: block;
+    flex-flow: column;
     
 }
 .container1 .music-container .box {
-    height: 100%;
     width: 100%;
     display: flex;
-    flex-flow: column;
     background: #f9f9f9;
     border-radius: 1rem;
     box-shadow: 0 .5rem 1rem #000;
     overflow: hidden;
-    
 }
 .container1 .music-container .box .image {
-    width: 80%;
-    height: 50%;
-    text-align: center;
-    align-self: center;
-}
-.container1 .music-container .box .image img {
-    border-radius: 50%;
-    width: 70%;
-    height: 100%;
+       width: 25%;
+       height: 60%;
 }
 .container1 .music-container .box .music {
-    height: 100%;
     width: 100%;
     text-align: center;
-    align-self: center;
-    
 }
-.music .musicname {
-    font-size: 14px;
-    
+.container1 .music-container .box .music audio{
+    width: 100%;
+    outline: none;
 }
-body.dark .music .musicname {
-    color: #262626;
+.container1 .music-container .box .image img {
+    height: 100%;
+    width: 90%;
+    outline: none;
 }
-body.dark .inside {
-    color: #262626;
-}
-body.dark .login_sec {
-    color: #262626;
-}
-body.dark .menu ul li a:hover {
-    color: wheat;
+.container1 .music-container .box .music audio::-webkit-media-controls-eclosure {
+    background: none;
 }
 /*MAIN SECTION*/
 body.dark {
@@ -226,33 +214,28 @@ body.dark {
 }
 .preminum_container {
     position: relative;
-    margin: 1.5rem;
-    width: 30rem;
+    margin: 2rem;
+    max-width: 100%;
+    height: 100%;
 }
 .preminum_box {
+    height: 100%;
+    width: 100%;
     display: block;
-    background: #797979;
-    box-shadow: 0 .6rem 1rem #000;
+    background: #f9f9f9;
+    box-shadow: 0 .5rem 1rem #000;
     overflow: hidden;
 }
 .inside {
     margin: 2rem;
     text-align: center;
-    align-items: center;
-    justify-content: center;
-}
-.inside ol {
-    display: inline;
-}
-.inside ol li {
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 .inside .pre_t {
-    font-size: 30px;
+    font-size: 24px;
     color: #dd5800;
+}
+.inside p {
+    width: 100%;
 }
 .inside input {
     border-color: #dd5800;
@@ -266,14 +249,13 @@ body.dark {
     position: relative;
     align-items: center;
     justify-content: center;
-    margin: 2rem;
 }
 .log_box {
     margin: 2rem;
     height: 100%;
     width: 30%;
     display: block;
-    background: #797979;
+    background: #f9f9f9;
     box-shadow: 0 .5rem 1rem #000;
     overflow: hidden;
 }
@@ -281,14 +263,13 @@ body.dark {
     position: relative;
     width: 100%;
     height: 100%;
-    font-size: 25px;
+    font-size: 22px;
 }
 .login .login_row {
     text-align: center;
     margin: 1rem;
 }
 .login .login_row .a {
-    font-size: 15px;
     margin: 1.5rem;
     border-color: #dd5800;
     color: #dd5800;
@@ -296,31 +277,29 @@ body.dark {
     height: 25px;
     
 }
+
 .button {
     border-color: #dd5800;
     border-radius: 30px;
     width: 100px;
-    height: 35px;
-    text-align: center;
-    align-items: center;
-    font-size: 18px;
+    height: 30px;
 }
+
+
+
+
+
+
+
 
 /*RESPONSIVE*/
 @media only screen and (max-width:600px){
     body {
         flex-flow: column;
-        margin: 0;
-    }
-    .menu {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        flex: 1;
     }
     .menusec .menuicon {
         display: block;
-        margin: 5px;
+        padding-right: 10px;
     }
     .menu ul {
         width: 100%;
@@ -338,7 +317,7 @@ body.dark {
         text-align: left;
     }
     .menu ul li a {
-        color: #262626;
+        color: white;
     }
     #menuList {
         overflow: hidden;
@@ -348,35 +327,32 @@ body.dark {
         width: 350px;
         padding: 15px;
     }
-    .musics {
-        position: relative;
-        flex-flow: column;
-    }
     .container1 {
-        width: 80%;
-        height: 10%;
+        font-size: 100px;
+        padding: 3px;
+
     }
     .container1 .music-container .box {
-        height: 30%;
+        height: 100%;
         width: 100%;
         flex-flow: column;
         display: flex;
     }
     .container1 .music-container .box .image {
-        height: 30%;
-        width: 80%;
+        height: 100%;
+        width: 100%;
     }
     .container1 .music-container .box .image img {
-        height: 50%;
-        width: 50%;
+        height: 100%;
+        width: 100%;
     }
     .container1 .music-container .box .music {
-        height: 30%;
+        height: 100%;
         width: 100%;
         
     }
     .music .musicname {
-        font-size: 20px;
+        font-size: 14px;
     }
     .mainsection {
         flex-direction: column-reverse;
@@ -400,48 +376,14 @@ body.dark {
         padding: 20px;
     }
     /*LOGIN*/
-    .login_sec {
-        display: flex;
-        position: relative;
-        align-items: center;
-        justify-content: center;
-        margin: 1rem;
-    }
     .log_box {
+        margin: 2rem;
         height: 100%;
-        width: 100%;
+        width: 80%;
         display: block;
-        background: #797979;
+        background: #f9f9f9;
         box-shadow: 0 .5rem 1rem #000;
         overflow: hidden;
-    }
-    .login {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        font-size: 20px;
-    }
-    .login .login_row {
-        text-align: center;
-        margin: 1rem;
-    }
-    .login .login_row .a {
-        font-size: 15px;
-        margin: 1.5rem;
-        border-color: #dd5800;
-        color: #dd5800;
-        width: 150px;
-        height: 25px;
-        
-    }
-    .button {
-        border-color: #dd5800;
-        border-radius: 30px;
-        width: 100px;
-        height: 35px;
-        text-align: center;
-        align-items: center;
-        font-size: 12px;
     }
     /*PREMIUM*/
     .chos_pre {
@@ -450,24 +392,6 @@ body.dark {
         align-items: center;
         justify-content: center;
         flex-flow: column;
-    }
-    .preminum_container {
-        position: relative;
-        width: 240px;
-    }
-    .label {
-        background-color: rgb(255, 115, 0);
-        padding: 2px;
-        height: 26px;
-        width: 50px;
-        display: flex;
-        position: relative;
-        align-items: center;
-        justify-content: space-between;
-        border-radius: 50px;
-    }
-    .checkbox:checked + .label .ball {
-        transform: translateX(25px);
     }
 }
 
