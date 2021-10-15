@@ -1,220 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="music.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="shortcut icon" type="image/x-icon" href="/photos/headphone copy.svg" style="border: 10px;">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <title>MusiClub</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="music.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="shortcut icon" type="image/x-icon" href="/photos/headphone copy.svg" style="border: 10px;">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+                integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+                crossorigin="anonymous" />
+        <title>MusiClub</title>
 </head>
-<body>  
+
+<body>
         <nav class="menusec">
-        <i class="fas fa-bars menuicon" onclick="toggleMenu()"></i> 
-        <h1>MusiClub</h1>
-        <nav class="menu" >
-                <ul id="menuList">
-                    <li><a href="#"><span class="home">Home</span></a></li>
-                    <li><a href="#about">About us</a></li>
-                    <li><a href="#premium">Premium</a></li>
-                    <li ><a href="#login">Login</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-        </nav> 
+                <i class="fas fa-bars menuicon" onclick="toggleMenu()"></i>
+                <h1>MusiClub</h1>
+                <nav class="menu">
+                        <ul id="menuList">
+                                <li><a href="#"><span class="home">Home</span></a></li>
+                                <li><a href="#about">About us</a></li>
+                                <li><a href="#premium">Premium</a></li>
+                                <li><a href="#login">Login</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                        </ul>
+                </nav>
                 <input type="checkbox" class="checkbox" id="checkbox">
                 <label for="checkbox" class="label">
-                    <i class="fas fa-moon moon"></i>
-                    <i class="fas fa-sun sun"></i>
-                    <div class="ball"></div>
-        
-                </label> 
+                        <i class="fas fa-moon moon"></i>
+                        <i class="fas fa-sun sun"></i>
+                        <div class="ball"></div>
+
+                </label>
         </nav>
         <div class="mainsection">
                 <div class="row1">
-                        <p>Here visitors can listen to masterpiece. <span class="msclb">MusiClub</span> is a website designed for listening to masterpieces. You can listen whenever you want.</p>
+                        <p>Here visitors can listen to masterpiece. <span class="msclb">MusiClub</span> is a website
+                                designed for listening to masterpieces. You can listen whenever you want.</p>
                 </div>
                 <div class="row2">
                         <img src="https://storage.googleapis.com/isometriclove.appspot.com/headphones_S.png">
                 </div>
-        </div> 
-        </div>  
-        <nav class="musics">
-                <div class="container1">  
-                        <div class="music-container"> 
-                                <div class="box">
-                                        <div class="image">
-                                        <img src="photos/The World is Yours, Nursery wall art, record player print, vinyl, kids room, nursery decor, kids prints, hip-hop baby, hip hop kids art, Nas.jpeg">
-                                        </div>
-                                        <div class="music"> 
-                                        <div class="musicname">BEETHOVEN - MOONLIGHT</div>
-                                        <audio src="music/beethoven-moonlight.mp3" controls></audio>
-                                        </div>
-                                </div>
-                        </div>
-                </div>
-                <div class="container1">  
-                        <div class="music-container"> 
-                                <div class="box">
-                                        <div class="image">
-                                        <img src="photos/The World is Yours, Nursery wall art, record player print, vinyl, kids room, nursery decor, kids prints, hip-hop baby, hip hop kids art, Nas.jpeg">
-                                        </div>
-                                        <div class="music"> 
-                                        <div class="musicname">TCHAIKOVSKY - SWAN LAKE</div>
-                                        <audio src="music/tchaikovsky-swan-lake-swan-theme.mp3" controls></audio>
+        </div>
+        </div>
+        <section class="musics">
+                <div class="carousel">
+                        <div class="carousel_item carousel_item--visible">
+                                <div class="container1">  
+                                        <div class="music-container"> 
+                                                <div class="box">
+                                                        <div class="image">
+                                                        <img src="photos/The World is Yours, Nursery wall art, record player print, vinyl, kids room, nursery decor, kids prints, hip-hop baby, hip hop kids art, Nas.jpeg">
+                                                        </div>
+                                                        <div class="music"> 
+                                                        <div class="musicname">BEETHOVEN - MOONLIGHT</div>
+                                                        <audio src="music/beethoven-moonlight.mp3" controls></audio>
+                                                        </div>
+                                                </div>
                                         </div>
                                 </div>
                         </div>
-                </div>
-                <div class="container1">  
-                        <div class="music-container"> 
-                                <div class="box">
-                                        <div class="image">
-                                        <img src="photos/The World is Yours, Nursery wall art, record player print, vinyl, kids room, nursery decor, kids prints, hip-hop baby, hip hop kids art, Nas.jpeg">
-                                        </div>
-                                        <div class="music"> 
-                                        <div class="musicname">CHOPIN - NOCTURNE</div>
-                                        <audio src="music/Chopin - Nocturne op.9 No.2.mp3" controls></audio>
-                                        </div>
-                                </div>
-                        </div>
-                </div>
-                <div class="container1">  
-                        <div class="music-container"> 
-                                <div class="box">
-                                        <div class="image">
-                                        <img src="photos/The World is Yours, Nursery wall art, record player print, vinyl, kids room, nursery decor, kids prints, hip-hop baby, hip hop kids art, Nas.jpeg">
-                                        </div>
-                                        <div class="music"> 
-                                        <div class="musicname">TCHAIKOVSKY - WALTZ OF THE FLOWERS</div>
-                                        <audio src="music/Tchaikovsky - Waltz of the Flowers.mp3" controls></audio>
+                        <div class="carousel_item">
+                                <div class="container1">  
+                                        <div class="music-container"> 
+                                                <div class="box">
+                                                        <div class="image">
+                                                        <img src="photos/The World is Yours, Nursery wall art, record player print, vinyl, kids room, nursery decor, kids prints, hip-hop baby, hip hop kids art, Nas.jpeg">
+                                                        </div>
+                                                        <div class="music"> 
+                                                        <div class="musicname">Tchaikovsky - Waltz of the Flowers</div>
+                                                        <audio src="music/Tchaikovsky - Waltz of the Flowers.mp3" controls></audio>
+                                                        </div>
+                                                </div>
                                         </div>
                                 </div>
                         </div>
+                        <div class="carousel_item">
+                                <div class="container1">  
+                                        <div class="music-container"> 
+                                                <div class="box">
+                                                        <div class="image">
+                                                        <img src="photos/The World is Yours, Nursery wall art, record player print, vinyl, kids room, nursery decor, kids prints, hip-hop baby, hip hop kids art, Nas.jpeg">
+                                                        </div>
+                                                        <div class="music"> 
+                                                        <div class="musicname">Beethoven - Silence</div>
+                                                        <audio src="music/Beethoven - Silence.mp3" controls></audio>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="carousel_item">
+                                <div class="container1">  
+                                        <div class="music-container"> 
+                                                <div class="box">
+                                                        <div class="image">
+                                                        <img src="photos/The World is Yours, Nursery wall art, record player print, vinyl, kids room, nursery decor, kids prints, hip-hop baby, hip hop kids art, Nas.jpeg">
+                                                        </div>
+                                                        <div class="music"> 
+                                                        <div class="musicname">Chopin - Nocturne</div>
+                                                        <audio src="music/Chopin - Nocturne.mp3" controls></audio>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="carousel_item">
+                                <div class="container1">  
+                                        <div class="music-container"> 
+                                                <div class="box">
+                                                        <div class="image">
+                                                        <img src="photos/The World is Yours, Nursery wall art, record player print, vinyl, kids room, nursery decor, kids prints, hip-hop baby, hip hop kids art, Nas.jpeg">
+                                                        </div>
+                                                        <div class="music"> 
+                                                        <div class="musicname">Tchaikovsky - Swan Lake</div>
+                                                        <audio src="music/tchaikovsky-swan-lake-swan-theme.mp3" controls></audio>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="carousel_actions">
+                                <button id="carousel_button--prev" aria-label="Previousslide"><</button>
+                                <button id="carousel_button--next" aria-label="Nextslide">></button>
+                        </div>
                 </div>
-                <div class="container1">  
-                        <div class="music-container"> 
-                                <div class="box">
-                                        <div class="image">
-                                        <img src="photos/The World is Yours, Nursery wall art, record player print, vinyl, kids room, nursery decor, kids prints, hip-hop baby, hip hop kids art, Nas.jpeg">
-                                        </div>
-                                        <div class="music"> 
-                                        <div class="musicname">BEETHOVEN - SILENCE</div>
-                                        <audio src="music/Beethoven - Silence.mp3" controls></audio>
-                                        </div>
+        </section>
+        <h1 id="about" class="section_h">ABOUT</h1>
+        <div class="about">
+                <div class="row1">
+                        <p class="ab">HI THERE! I'm Asim Makhmudov. I'm Azerbaijanian based web designer & front-end
+                                developer focused on crafting clean & user-friendly experience. I am passionate about
+                                building excellent software that improves the lives of those around me.</p>
+                </div>
+                <div class="row2">
+                        <img src="https://storage.googleapis.com/isometriclove.appspot.com/human-1Side.png">
+                </div>
+        </div>
+        <h1 id="premium" class="section_h">PREMIUM</h1>
+        
+        <nav class="chos_pre">
+                <div class="preminum_container">
+                        <div class="preminum_box">
+                                <div class="inside">
+                                        <div class="pre_t">MusiClub <br> Free</div>
+                                        <p>
+                                                ✔️ 73 million tracks
+                                                <br>
+                                                ✔️ Shuffle Play
+                                                <br>
+                                                ❌ No ads
+                                                <br>
+                                                ❌ Get unlimited skips
+                                                <br>
+                                                ❌ Offline mode
+                                                <br>
+                                                ❌ 6 accounts
+                                        </p>
+                                        <br>
+                                        <br>
+                                        <input type="button" value="Sign up">
+                                </div>
+                        </div>
+                </div>
+                <div class="preminum_container">
+                        <div class="preminum_box">
+                                <div class="inside">
+                                        <div class="pre_t">MusiClub <br> Premium</div>
+                                        <p>
+                                                ✔️ 73 million tracks
+                                                <br>
+                                                ✔️ Shuffle Play
+                                                <br>
+                                                ✔️ No ads
+                                                <br>
+                                                ✔️ Get unlimited skips
+                                                <br>
+                                                ✔️ Offline mode
+                                                <br>
+                                                ❌ 6 accounts
+                                        </p>
+                                        <br>
+                                        <br>
+                                        <input type="button" value="Try it now">
+                                </div>
+                        </div>
+                </div>
+                <div class="preminum_container">
+                        <div class="preminum_box">
+                                <div class="inside">
+                                        <div class="pre_t">MusiClub <br> Family</div>
+                                        <p>
+                                                ✔️ 73 million tracks
+                                                <br>
+                                                ✔️ Shuffle Play
+                                                <br>
+                                                ✔️ No ads
+                                                <br>
+                                                ✔️ Get unlimited skips
+                                                <br>
+                                                ✔️ Offline mode
+                                                <br>
+                                                ✔️ 6 accounts
+                                        </p>
+                                        <br>
+                                        <br>
+                                        <input type="button" value="Try it now">
                                 </div>
                         </div>
                 </div>
         </nav>
-                <h1 id="about" class="section_h">ABOUT</h1>
-                <div class="about">
-                        <div class="row1">
-                        <p class="ab">HI THERE! I'm Asim Makhmudov. I'm Azerbaijanian based web designer & front-end developer focused on crafting clean & user-friendly experience. I am passionate about building excellent software that improves the lives of those around me.</p>
-                        </div>
-                        <div class="row2">
-                        <img src="https://storage.googleapis.com/isometriclove.appspot.com/human-1Side.png">
+        <h1 class="section_h">LOGIN</h1>
+        <section class="login_sec">
+                <div class="log_box">
+                        <div id="login" class="login">
+                                <form class="login_row">
+                                        <label for="email">E-MAIL</label>
+                                        <br>
+                                        <input id="email" class="email a" type="email" placeholder="@mcmail.com">
+                                        <br>
+                                        <label for="password">PASSWORD</label>
+                                        <br>
+                                        <input id="password" class="password a" type="password"
+                                                placeholder="***********">
+                                        <br>
+                                        <input class="button" type="button" value="SIGN IN">
+                                        <br>
+                                </form>
                         </div>
                 </div>
-                <h1 id="premium" class="section_h">PREMIUM</h1>
-                <nav class="chos_pre">
-                        <div class="preminum_container">
-                                <div class="preminum_box">
-                                        <div class="inside">
-                                                <div class="pre_t">MusiClub <br> Free</div>    
-                                                <p>
-                                                        ✔️ 73 million tracks
-                                                        <br>
-                                                        ✔️ Shuffle Play
-                                                        <br>
-                                                        ❌ No ads
-                                                        <br>
-                                                        ❌ Get unlimited skips
-                                                        <br>
-                                                        ❌ Offline mode
-                                                        <br>
-                                                        ❌ 6 accounts
-                                                </p>
-                                                <br>
-                                                <br>
-                                                <input type="button" value="Sign up">
-                                        </div>
-                                </div>
-                        </div>
-                        <div class="preminum_container">
-                                <div class="preminum_box">
-                                        <div class="inside">
-                                                <div class="pre_t">MusiClub <br> Premium</div>    
-                                                <p>
-                                                        ✔️ 73 million tracks
-                                                        <br>
-                                                        ✔️ Shuffle Play
-                                                        <br>
-                                                        ✔️ No ads
-                                                        <br>
-                                                        ✔️ Get unlimited skips
-                                                        <br>
-                                                        ✔️ Offline mode
-                                                        <br>
-                                                        ❌ 6 accounts
-                                                </p>
-                                                <br>
-                                                <br>
-                                                <input type="button" value="Try it now">
-                                        </div>
-                                </div>
-                        </div>
-                        <div class="preminum_container">
-                                <div class="preminum_box">
-                                        <div class="inside">
-                                                <div class="pre_t">MusiClub <br> Family</div>    
-                                                <p>
-                                                        ✔️ 73 million tracks
-                                                        <br>
-                                                        ✔️ Shuffle Play
-                                                        <br>
-                                                        ✔️ No ads
-                                                        <br>
-                                                        ✔️ Get unlimited skips
-                                                        <br>
-                                                        ✔️ Offline mode
-                                                        <br>
-                                                        ✔️ 6 accounts
-                                                </p>
-                                                <br>
-                                                <br>
-                                                <input type="button" value="Try it now">
-                                        </div>
-                                </div>
-                        </div>
-                </nav>
-                <h1 class="section_h">LOGIN</h1>
-                <nav class="login_sec">
-                        <div class="log_box">
-                                <div id="login" class="login">
-                                        <form class="login_row">
-                                                <label for="email">E-MAIL</label>
-                                                <br>
-                                                <input id="email" class="email a" type="email" placeholder="@mcmail.com">
-                                                <br>
-                                                <label for="password">PASSWORD</label>
-                                                <br>
-                                                <input id="password" class="password a" type="password" placeholder="***********">
-                                                <br>
-                                                <input class="button" type="button" value="SIGN IN">
-                                                <br>
-                                        </form>
-                                </div>
-                        </div>
-                </nav>
-                <div class="footer">
-                       <span class="ft">copyright © 2020 - 2021 <br> Asim Makhmudov</span>
-                       <br>
-                       <div class="contact" id="contact">
-                       <a href="https://www.instagram.com/asim.makhmudzadeh/"><i class="fab fa-instagram"></i></a>
-                       <a href="https://www.facebook.com/asim.mahmudov.92/"><i class="fab fa-facebook"></i></a>
-                       </div>
+        </section>
+        <div class="footer">
+                <span class="ft">copyright © 2020 - 2021 <br> Asim Makhmudov</span>
+                <br>
+                <div class="contact" id="contact">
+                        <a href="https://www.instagram.com/asim.makhmudzadeh/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/asim.mahmudov.92/"><i class="fab fa-facebook"></i></a>
                 </div>
-                <script src="music.js"></script>
+        </div>
+        <script src="music.js"></script>
 </body>
+
 </html>

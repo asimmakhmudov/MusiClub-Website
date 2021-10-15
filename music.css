@@ -3,6 +3,8 @@
     box-sizing: border-box;
     font-family: 'Squada One', cursive;
     margin: 0;
+    scroll-behavior: smooth;
+    /* border: 2px solid red; */
 }
 body {
     transition: 0.2s linear;
@@ -12,8 +14,10 @@ body {
 
 .menusec .menu {
     width: 100%;
-    margin-bottom: 60px;
+    height: 100%;
+    max-height: 100px !important;
     display: flex;
+
     align-items: center;
     flex: 1;
     text-align: right;
@@ -44,6 +48,7 @@ body {
 }
 .menusec {
     width: 100%;
+    height: 100%;
     padding-left: 5%;
     padding-right: 5%;
     padding-top: 2%;
@@ -91,16 +96,78 @@ body {
     transition: 0.3s linear;
 }
 /*MUSIC CONTAINERS*/
-
 .musics {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
 }
+
+/* CAROUSEL */
+.carousel {
+    overflow: hidden;
+    width: 100%;
+    max-width: 600px;
+    height: 100%;
+    position: relative;
+}
+.carousel .carousel_item {
+    margin: 20px;
+    display: flex;
+}
+.carousel .carousel_item, .carousel .carousel_item--hidden {
+    display: none;
+}
+.carousel .carousel_item .container1 {
+    width: 100%;
+    max-width: 400px;
+    height: 500px;
+}
+.carousel .carousel_item--visible {
+    display: flex;
+    justify-content: center;
+    animation: fadeVisibility 0.5s;
+}
+.carousel .carousel_actions {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.carousel .carousel_actions button {
+    border-radius: 50px;
+    border: 0;
+    font-weight: bold;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+/* .carousel .carousel_actions button#carousel_button--prev {
+    margin-right: 0px;
+}
+.carousel .carousel_actions button#carousel_button--next {
+    margin-right: 0px;
+} */
+
+@keyframes fadeVisibility {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: opacity linear;
+    }
+}
+
+/* MUSICS */
 .container1 {
     position: relative;
-    margin: 3rem;
-    max-width: 100%;
-    height: 50%;
-    width: 80%;
+    width: 100%;
+    height: 100%;
+    max-height: 500px;
 }
 .container1 .musicname {
     color: #000;
@@ -111,9 +178,14 @@ body {
 .container1 .music-container {
     display: block;
     flex-flow: column;
+    max-height: 500px;
+    height: 100%;
+    width: 100%;
 }
 .container1 .music-container .box {
     width: 100%;
+    max-width: 400px;
+    height: 100%;
     display: flex;
     background: #f9f9f9;
     border-radius: 1rem;
@@ -123,7 +195,9 @@ body {
 }
 .container1 .music-container .box .image {
     width: 100%;
-    height: 60%;
+    margin: 0 auto;
+    max-width: 400px;
+    height: auto;
 }
 .container1 .music-container .box .music {
     width: 100%;
@@ -246,6 +320,7 @@ body.dark {
     border-radius: 30px;
     width: 100px;
     height: 30px;
+    cursor: pointer;
 }
 /*LOGIN SECTION*/
 .login_sec {
@@ -257,7 +332,7 @@ body.dark {
 .log_box {
     margin: 2rem;
     height: 100%;
-    width: 30%;
+    width: 40%;
     display: block;
     background: #f9f9f9;
     box-shadow: 0 .5rem 1rem #000;
@@ -275,7 +350,7 @@ body.dark {
 }
 .login .login_row .a {
     margin: 1.5rem;
-    border-color: #dd5800;
+    text-align: left;
     color: #dd5800;
     width: 250px;
     height: 25px;
@@ -287,6 +362,7 @@ body.dark {
     border-radius: 30px;
     width: 100px;
     height: 30px;
+    cursor: pointer;
 }
 
 
