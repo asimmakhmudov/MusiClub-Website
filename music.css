@@ -113,7 +113,7 @@ body {
     position: relative;
 }
 .carousel .carousel_item {
-    margin: 20px;
+    margin: 10px;
     display: flex;
 }
 .carousel .carousel_item, .carousel .carousel_item--hidden {
@@ -283,7 +283,7 @@ body.dark {
     font-size: 30px;
 }
 /*PREMIUM*/
-
+/* 
 .chos_pre {
     display: flex;
     position: relative;
@@ -321,9 +321,9 @@ body.dark {
     width: 100px;
     height: 30px;
     cursor: pointer;
-}
+} */
 /*LOGIN SECTION*/
-.login_sec {
+/* .login_sec {
     display: flex;
     position: relative;
     align-items: center;
@@ -363,7 +363,7 @@ body.dark {
     width: 100px;
     height: 30px;
     cursor: pointer;
-}
+} */
 
 
 
