@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Squada+One&display=swap');
+* {
+    /* border: 2px solid red; */
+    font-family: 'Squada One', cursive;
+}
+body {
+    background: #eae2b7;
+    
+}
+.active {
+    background: #242424;
+    color: #eae2b7 !important;
+}
+.navtheme {
+    background: #f77f00;
+    color: #003049;
+}
+.navbar {
+    padding: 10px;
+    background: #003049 !important;
+}
+.darklight button {
+    background: #fcbf49;
+    color: #003049;
+}
+.home {
+    height: 100vh;
+}
+.home .right img {
+    max-width: 500px;
+    max-height: 500px;
+    height: auto;
+    width: auto;
+}
+.home .right {
+    width: 100%;
+}
+aside {
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.msclb {
+    color: #f77f00;
+}
+.left {
+    flex-flow: column;
+    width: 100%;
+    padding: 10px;
+}
+.left p {
+    width: 500px;
+    font-size: 30px;
+}
+/* MUsics */
+.musics {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 30px;
+}
+/* CAROUSEL */
+.carousel {
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    padding: 10px;
+    position: relative;
+}
+.carousel .carousel_item {
+    display: flex;
+}
+.carousel .carousel_item, .carousel .carousel_item--hidden {
+    display: none;
+}
+.carousel .carousel_item .container1 {
+    width: 100%;
+    max-width: 400px;
+    height: 500px;
+}
+.carousel .carousel_item--visible {
+    display: flex;
+    justify-content: center;
+    animation: fadeVisibility 0.5s;
+}
+.carousel .carousel_actions {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.carousel .carousel_actions button {
+    border-radius: 50px;
+    border: 0;
+    font-weight: bold;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+@keyframes fadeVisibility {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: opacity linear;
+    }
+}
+
+/* MUSICS */
+.container1 {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+.container1 .musicname {
+    color: #000;
+    font-size: 14px;
+    text-align: center;
+    margin: 2px;
+}
+.container1 .music-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    height: 100%;
+    width: 100%;
+}
+.container1 .music-container .box {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    display: flex;
+    background: #f9f9f9;
+    box-shadow: 1px 5px 10px #003049;
+    overflow: hidden;
+    flex-flow: column;
+}
+.container1 .music-container .box .image {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 400px;
+    height: auto;
+}
+.container1 .music-container .box .music {
+    width: 100%;
+    text-align: center;
+}
+.container1 .music-container .box .music audio{
+    width: 100%;
+    outline: none;
+}
+.container1 .music-container .box .image img {
+    height: 100%;
+    width: 100%;
+    outline: none;
+}
+.container1 .music-container .box .music audio::-webkit-media-controls-eclosure {
+    background: none;
+}
+
+.about {
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.about_right img {
+        width: 80%;
+        height: 100%;
+}
+.about_left p {
+    width: 100%;
+    max-width: 700px;
+    font-size: 24px;
+}
+@media only screen and (max-width: 756px){
+    .home {
+        height: 100vh;
+        flex-flow: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .home .right img {
+        max-width: 300px;
+        max-height: 300px;
+        height: auto;
+        width: auto;
+    }
+    .home .left p {
+        font-size: 20px !important;
+        width: 100%;
+    }
+    .musics {
+        display: flex;
+        justify-content: center;
+        flex-flow: column;
+        align-items: center;
+        height: 100%;
+        /* max-height: 400px; */
+        width: 100%;
+        padding: 0px;
+    }
+    .carousel {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 800px;
+        height: 10%;
+        padding: 0px;
+        position: relative;
+    }
+    .container1 .music-container .box {
+        width: 100%;
+        height: auto;
+        border-radius: 30px;
+        display: flex;
+        background: #f9f9f9;
+        box-shadow: 1px 5px 10px #003049;
+        overflow: hidden;
+        flex-flow: column;
+    }
+    .about div {
+        flex-flow: column-reverse;
+    }
+    .about_right {
+        width: 100%;
+    }
+    .about_left {
+        width: 100%;
+    }
+    
+    .about_right img {
+        height: 100%;
+        width: 100%;
+    }
+    .about_left p {
+        padding: 15px;
+        font-size: 21px;
+    }
+}

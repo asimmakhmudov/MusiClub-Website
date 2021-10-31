@@ -2,245 +2,174 @@
 <html lang="en">
 
 <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="music.css">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link rel="shortcut icon" type="image/x-icon" href="/photos/headphone copy.svg" style="border: 10px;">
-        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-                integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
-                crossorigin="anonymous" />
-        <title>MusiClub</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Musicclub</title>
 </head>
 
 <body>
-        <nav class="menusec">
-                <i class="fas fa-bars menuicon" onclick="toggleMenu()"></i>
-                <h1>MusiClub</h1>
-                <nav class="menu">
-                        <ul id="menuList">
-                                <li><a href="#"><span class="home">Home</span></a></li>
-                                <li><a href="#about">About us</a></li>
-                                <li><a href="#premium">Premium</a></li>
-                                <li><a href="#login">Login</a></li>
-                                <li><a href="#contact">Contact</a></li>
-                        </ul>
-                </nav>
-                <input type="checkbox" class="checkbox" id="checkbox">
-                <label for="checkbox" class="label">
-                        <i class="fas fa-moon moon"></i>
-                        <i class="fas fa-sun sun"></i>
-                        <div class="ball"></div>
-
-                </label>
-        </nav>
-        <div class="mainsection">
-                <div class="row1">
-                        <p>Here visitors can listen to masterpiece. <span class="msclb">MusiClub</span> is a website
-                                designed for listening to masterpieces. You can listen whenever you want.</p>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="position: fixed; width: 100%; z-index: 10;">
+        <a class="navbar-brand" href="#">
+            <img src="https://storage.googleapis.com/isometriclove.appspot.com/headphones_S.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            MusiClub
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown"
+            style="justify-content: right; text-align: center;">
+            <ul class="navbar-nav mr-auto">
+                <div class="btn-group darklight" role="group" aria-label="Basic example">
+                    <button id="dark" type="button" class="btn btn-secondary">Dark</button>
+                    <button id="light" type="button" class="btn btn-secondary">Light</button>
                 </div>
-                <div class="row2">
-                        <img src="https://storage.googleapis.com/isometriclove.appspot.com/headphones_S.png">
-                </div>
+                <li class="nav-item" style="margin-right: 20px; margin-left: 20px;">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item" style="margin-right: 20px; margin-left: 20px;">
+                    <a class="nav-link" href="#musics">Music</a>
+                </li>
+                <li class="nav-item" style="margin-right: 20px; margin-left: 20px;">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item" style="margin-right: 20px; margin-left: 20px;">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
         </div>
+    </nav>
+    <section class="home" style="display: flex;">
+        <aside class="left">
+            <div class="left-content">
+                <h1 id="headofhome">MUSICLUB</h1>
+                <p>Here visitors can listen to masterpiece. <span class="msclb">MusiClub</span> is a website designed
+                    for
+                    listening to masterpieces. You can listen whenever you want.
+                </p>
+                <a href="#musics">
+                    <button type="button" class="btn btn-dark btn-lg"
+                        style="color: #fcbf49; background: #003049;">Listen</button>
+                </a>
+            </div>
+        </aside>
+        <aside class="right">
+            <img src="https://storage.googleapis.com/isometriclove.appspot.com/headphones_S.png">
+        </aside>
+    </section>
+    <section id="musics" class="musics">
+        <h1>Musics</h1>
+        <div class="carousel">
+            <div class="carousel_item carousel_item--visible">
+                <div class="container1">
+                    <div class="music-container">
+                        <div class="box">
+                            <div class="image">
+                                <img src="photos/moonlight.jpg">
+                            </div>
+                            <div class="music">
+                                <div class="musicname">BEETHOVEN - MOONLIGHT</div>
+                                <audio src="music/beethoven-moonlight.mp3" controls></audio>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel_item">
+                <div class="container1">
+                    <div class="music-container">
+                        <div class="box">
+                            <div class="image">
+                                <img src="photos/waltzofflowers_.jpg">
+                            </div>
+                            <div class="music">
+                                <div class="musicname">Tchaikovsky - Waltz of the Flowers</div>
+                                <audio src="music/Tchaikovsky - Waltz of the Flowers.mp3" controls></audio>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel_item">
+                <div class="container1">
+                    <div class="music-container">
+                        <div class="box">
+                            <div class="image">
+                                <img src="photos/Beethoven.jpg">
+                            </div>
+                            <div class="music">
+                                <div class="musicname">Beethoven - Silence</div>
+                                <audio src="music/Beethoven - Silence.mp3" controls></audio>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel_item">
+                <div class="container1">
+                    <div class="music-container">
+                        <div class="box">
+                            <div class="image">
+                                <img src="photos/nocturne.jpg">
+                            </div>
+                            <div class="music">
+                                <div class="musicname">Chopin - Nocturne</div>
+                                <audio src="music/Chopin - Nocturne.mp3" controls></audio>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel_item">
+                <div class="container1">
+                    <div class="music-container">
+                        <div class="box">
+                            <div class="image">
+                                <img src="photos/SwanLake.png">
+                            </div>
+                            <div class="music">
+                                <div class="musicname">Tchaikovsky - Swan Lake</div>
+                                <audio src="music/tchaikovsky-swan-lake-swan-theme.mp3" controls></audio>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel_actions">
+                    <button id="carousel_button--prev" aria-label="Previousslide"><</button>
+                    <button id="carousel_button--next" aria-label="Nextslide">></button>
+            </div>
         </div>
-        <section class="musics">
-                <div class="carousel">
-                        <div class="carousel_item carousel_item--visible">
-                                <div class="container1">  
-                                        <div class="music-container"> 
-                                                <div class="box">
-                                                        <div class="image">
-                                                        <img src="photos/moonlight.jpg">
-                                                        </div>
-                                                        <div class="music"> 
-                                                        <div class="musicname">BEETHOVEN - MOONLIGHT</div>
-                                                        <audio src="music/beethoven-moonlight.mp3" controls></audio>
-                                                        </div>
-                                                </div>
-                                        </div>
-                                </div>
-                        </div>
-                        <div class="carousel_item">
-                                <div class="container1">  
-                                        <div class="music-container"> 
-                                                <div class="box">
-                                                        <div class="image">
-                                                        <img src="photos/waltzofflowers_.jpg">
-                                                        </div>
-                                                        <div class="music"> 
-                                                        <div class="musicname">Tchaikovsky - Waltz of the Flowers</div>
-                                                        <audio src="music/Tchaikovsky - Waltz of the Flowers.mp3" controls></audio>
-                                                        </div>
-                                                </div>
-                                        </div>
-                                </div>
-                        </div>
-                        <div class="carousel_item">
-                                <div class="container1">  
-                                        <div class="music-container"> 
-                                                <div class="box">
-                                                        <div class="image">
-                                                        <img src="photos/Beethoven.jpg">
-                                                        </div>
-                                                        <div class="music"> 
-                                                        <div class="musicname">Beethoven - Silence</div>
-                                                        <audio src="music/Beethoven - Silence.mp3" controls></audio>
-                                                        </div>
-                                                </div>
-                                        </div>
-                                </div>
-                        </div>
-                        <div class="carousel_item">
-                                <div class="container1">  
-                                        <div class="music-container"> 
-                                                <div class="box">
-                                                        <div class="image">
-                                                        <img src="photos/nocturne.jpg">
-                                                        </div>
-                                                        <div class="music"> 
-                                                        <div class="musicname">Chopin - Nocturne</div>
-                                                        <audio src="music/Chopin - Nocturne.mp3" controls></audio>
-                                                        </div>
-                                                </div>
-                                        </div>
-                                </div>
-                        </div>
-                        <div class="carousel_item">
-                                <div class="container1">  
-                                        <div class="music-container"> 
-                                                <div class="box">
-                                                        <div class="image">
-                                                        <img src="photos/SwanLake.png">
-                                                        </div>
-                                                        <div class="music"> 
-                                                        <div class="musicname">Tchaikovsky - Swan Lake</div>
-                                                        <audio src="music/tchaikovsky-swan-lake-swan-theme.mp3" controls></audio>
-                                                        </div>
-                                                </div>
-                                        </div>
-                                </div>
-                        </div>
-                        <div class="carousel_actions">
-                                <button id="carousel_button--prev" aria-label="Previousslide"><</button>
-                                <button id="carousel_button--next" aria-label="Nextslide">></button>
-                        </div>
-                </div>
-        </section>
-        <h1 id="about" class="section_h">ABOUT</h1>
-        <div class="about">
-                <div class="row1">
-                        <p class="ab">HI THERE! I'm Asim Makhmudov. I'm Azerbaijanian based web designer & front-end
-                                developer focused on crafting clean & user-friendly experience. I am passionate about
-                                building excellent software that improves the lives of those around me.</p>
-                </div>
-                <div class="row2">
-                        <img src="https://storage.googleapis.com/isometriclove.appspot.com/human-1Side.png">
-                </div>
+    </section>
+    
+    <section id="about" class="about">
+        <h1>About</h1>
+        <div style="display: flex;">
+            <aside class="about_left">
+                <p>HI THERE! I'm Asim Makhmudov. I'm Azerbaijanian based web designer & front-end
+                    developer focused on crafting clean & user-friendly experience. I am passionate about
+                    building excellent software that improves the lives of those around me.</p>
+            </aside>
+            <aside class="about_right">
+                <img src="https://storage.googleapis.com/isometriclove.appspot.com/human-1Side.png">
+            </aside>
         </div>
-        <!-- <h1 id="premium" class="section_h">PREMIUM</h1>
         
-        <nav class="chos_pre">
-                <div class="preminum_container">
-                        <div class="preminum_box">
-                                <div class="inside">
-                                        <div class="pre_t">MusiClub <br> Free</div>
-                                        <p>
-                                                ✔️ 73 million tracks
-                                                <br>
-                                                ✔️ Shuffle Play
-                                                <br>
-                                                ❌ No ads
-                                                <br>
-                                                ❌ Get unlimited skips
-                                                <br>
-                                                ❌ Offline mode
-                                                <br>
-                                                ❌ 6 accounts
-                                        </p>
-                                        <br>
-                                        <br>
-                                        <input type="button" value="Sign up">
-                                </div>
-                        </div>
-                </div>
-                <div class="preminum_container">
-                        <div class="preminum_box">
-                                <div class="inside">
-                                        <div class="pre_t">MusiClub <br> Premium</div>
-                                        <p>
-                                                ✔️ 73 million tracks
-                                                <br>
-                                                ✔️ Shuffle Play
-                                                <br>
-                                                ✔️ No ads
-                                                <br>
-                                                ✔️ Get unlimited skips
-                                                <br>
-                                                ✔️ Offline mode
-                                                <br>
-                                                ❌ 6 accounts
-                                        </p>
-                                        <br>
-                                        <br>
-                                        <input type="button" value="Try it now">
-                                </div>
-                        </div>
-                </div>
-                <div class="preminum_container">
-                        <div class="preminum_box">
-                                <div class="inside">
-                                        <div class="pre_t">MusiClub <br> Family</div>
-                                        <p>
-                                                ✔️ 73 million tracks
-                                                <br>
-                                                ✔️ Shuffle Play
-                                                <br>
-                                                ✔️ No ads
-                                                <br>
-                                                ✔️ Get unlimited skips
-                                                <br>
-                                                ✔️ Offline mode
-                                                <br>
-                                                ✔️ 6 accounts
-                                        </p>
-                                        <br>
-                                        <br>
-                                        <input type="button" value="Try it now">
-                                </div>
-                        </div>
-                </div>
-        </nav>
-        <h1 class="section_h">LOGIN</h1>
-        <section class="login_sec">
-                <div class="log_box">
-                        <div id="login" class="login">
-                                <form class="login_row">
-                                        <label for="email">E-MAIL</label>
-                                        <br>
-                                        <input id="email" class="email a" type="email" placeholder="@mcmail.com">
-                                        <br>
-                                        <label for="password">PASSWORD</label>
-                                        <br>
-                                        <input id="password" class="password a" type="password"
-                                                placeholder="***********">
-                                        <br>
-                                        <input class="button" type="button" value="SIGN IN">
-                                        <br>
-                                </form>
-                        </div>
-                </div>
-        </section> -->
-        <div class="footer">
-                <span class="ft">copyright © 2020 - 2021 <br> Asim Makhmudov</span>
-                <br>
-                <div class="contact" id="contact">
-                        <a href="https://www.instagram.com/asim.makhmudzadeh/"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.facebook.com/asim.mahmudov.92/"><i class="fab fa-facebook"></i></a>
-                </div>
-        </div>
-        <script src="music.js"></script>
+    </section>
+    <script src="script.js"></script>
 </body>
 
 </html>

@@ -1,19 +1,3 @@
-const checkbox = document.getElementById("checkbox")
-checkbox.addEventListener('change', () => {
-    document.body.classList.toggle('dark');
-});
-var menuList = document.getElementById("menuList");
-menuList.style.maxHeight = "0px";
-function toggleMenu(){
-    if (menuList.style.maxHeight == "0px") {
-        menuList.style.maxHeight = "500px";
-    }
-    else {
-        menuList.style.maxHeight = "0px"
-    }
-}
-
-
 let slidePosition = 0
 const slides = document.getElementsByClassName('carousel_item')
 const totalSlides = slides.length
@@ -53,3 +37,13 @@ function moveToPreviousSlide() {
     }
     updateSlidePosition()
 }
+
+const dark = document.getElementById("dark")
+dark.addEventListener('click', () => {
+    document.body.classList.add('active');
+    document.nav.classList.add('navtheme');
+});
+const light = document.getElementById("light")
+light.addEventListener('click', () => {
+    document.body.classList.remove('active');
+});
